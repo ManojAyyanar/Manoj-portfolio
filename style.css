@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+nav{
+    width:100%;
+    position:sticky !important;
+    top:0;
+    left:0;
+    box-shadow:0px 5px 8px rgba(0, 0, 0, 0.726);
+    z-index: 10;
+}
+/* Home section */
+#home{
+    height:100vh;
+    width: 100%;
+    background-image: url(images/work4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+
+}
+@media only screen and (max-width: 768px) {
+  #home{
+    height: auto;
+  }    
+}
+#about{
+    background-color: rgb(189, 238, 222);
+    height:auto;
+    width: 100%;
+    position: relative;
+}
+#about-img{
+    position: absolute;
+    top:80px;
+    left: 450px;
+}
+
+#about-img img{
+    width: 400px;
+    height: 300px;
+    border-radius: 10%;
+    box-shadow: 1px 1px 8px rgb(0, 0, 0),
+                -1px -1px 8px rgb(0, 0, 0);
+    
+}
+@media only screen and (max-width: 768px) {
+#about-img{
+    position: absolute;
+    top:90px;
+    left:50px;
+}
+    
+}
+.about-cont{
+    font-weight: 900;
+    margin-left:30px;
+    margin-top:400px;
+}
+/* Skils */
+#skills{
+
+    width: 100%;
+    height:auto;
+}
+.skills{
+    margin-top: 10px;
+    margin-left:100px;
+    background-color:transparent;
+    width:900px;
+    height: 400px;
+    position: relative;
+    box-shadow: 1px 1px 8px black,
+                -1px -1px 8px black;
+}
+#f-div{  
+  position: absolute;
+  top:2%;
+  left: 13%;
+  box-shadow: 3px 3px 15px rgba(127, 230, 224, 0.582),
+              -3px -3px 15px rgba(127, 230, 224, 0.582);
+}
+#f-div:hover{
+    box-shadow: 3px 3px 15px rgba(9, 85, 81, 0.582),
+              -3px -3px 15px rgba(6, 66, 63, 0.582);
+}
+@media only screen and (max-width: 768px){
+    .skills{
+        margin-top: 20px;
+        margin-left:50px;
+        width:400px;
+        height:300px;
+    }
+    #f-div{
+        position: absolute;
+        top:10%;
+        left: 7%;
+    }    
+    #f-div img{
+        width: 350px;
+        height: 200px;
+    }  
+}
+#skills label{
+    font-size: 20px;
+}
+.progress{
+    height: 30px !important;
+    box-shadow: 2px 4px 5px black,
+                -2px -4px 5px gray;
+}
+.progress:hover{
+    box-shadow: 2px 4px 5px gray,
+                -2px -4px 5px black;
+}
+/* work */
+#work{
+    background-color: aliceblue;
+    row-gap: 5rem;
+}
+#work .col-12{
+    width: 430px;
+    height: 300px;
+    box-shadow: 0 4px 25px rgba(14,36,49,0.15);
+   border-radius: 10%;
+   overflow: hidden;
+}
+#work .col-12 img{
+    transition: 1s;
+    cursor: pointer;
+}
+#work .col-12 img:hover{
+    transform: scale(1.1);
+} 
+/* contact */
+#contact{
+    background-color:rgb(233, 179, 99);
+}
